@@ -1,4 +1,3 @@
-// Konstante variabler (DRY: Dont Repeat Yourself)
 const alkohol1 = document.querySelector("#snaps");
 const alkohol2 = document.querySelector("#oel");
 const fri1 = document.querySelector("#sodavand");
@@ -19,4 +18,7 @@ function klikDrik() {
 }
 
 // "This" refererer til alle de eventlistenere, der er tilkoblet funktionen. Altså: fri1, fri2, alkohol1, alkohol2
-// || Betyder eller, altså at if else funktionen har flere betingelser, der kan opfyldes for at den "indeholder alkohol"
+// || Betyder "eller", altså at if else funktionen har flere betingelser, der kan opfyldes for at den "indeholder alkohol"
+
+// Man kan også bruge if (this.alt == "øl") {console.log("indeholder alkohol");}
+// Her tjekker den, hvilken "alt-tekst" der er tildelt "this". Altså i dette tilfælde, er alt-teksten "øl", så indeholder den alkohol
