@@ -2,31 +2,28 @@
 const titel = document.querySelector("h1");
 console.log(titel);
 
-titel.textContent = "En anden titel";
-
-// 1-Artikel: overskrift
-const article1 = document.querySelector("section article h3");
+// ARTIKEL 1
+const article1 = document.querySelector("article:nth-child(1)");
 console.log(article1);
 
-article1.textContent = "En anden artikel-titel";
+const img1 = document.querySelector("article:nth-child(1) img");
+console.log(img1);
 
-// 1-Artikel: brødtekst
-const p1 = document.querySelector("section article p");
-console.log(p1);
+const article1Heading = document.querySelector("article:nth-child(1) h3");
+console.log(article1Heading);
 
-p1.textContent = "Ny brødtekst";
+const article1Content = document.querySelector("article:nth-child(1) p");
+console.log(article1Content);
 
-// Artikel overskrift 2
-const article2 = document.querySelector("section:nth-child(2)");
+// ARTIKEL 2
+const article2 = document.querySelector("article:nth-child(2)");
 console.log(article2);
 
-article2.textContent = "Ny ny ny";
+const img2 = document.querySelector("article:nth-child(2) img");
+console.log(img2);
 
-// 2 Brødtekst
+const article2Heading = document.querySelector("article:nth-child(2) h3");
+console.log(article2Heading);
 
-// const h3_2 = document.querySelector("article:nth-child(1)");
-
-// const article1 = document.querySelector("article:nth-child(1)");
-// const img1 = document.querySelector("article:nth-child(1) img");
-// const article1Heading = document.querySelector("article:nth-child(1) h3");
-// const article1Content = document.querySelector("article:nth-child(1) p");
+const article2Content = document.querySelector("article:nth-child(2) p");
+console.log(article2Content);
