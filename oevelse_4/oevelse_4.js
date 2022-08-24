@@ -69,3 +69,37 @@ console.log(article2Content.innerHTML);
 article2Content.innerHTML =
   "<b>Nyt indhold til andet artikel med fed tekst. Her har jeg brugt innerHTML.</b>";
 console.log(article2Content.textContent);
+
+// 1) Opret et nyt article-element med (createElement)
+let newArticle = document.createElement("article");
+let mainSection = document.querySelector("section");
+
+// 2) Tilføj et billede, overskrift og tekst til den nye artikel
+
+let billede = document.createElement("img");
+billede.src = "https://placeimg.com/640/480/people";
+newArticle.appendChild(billede);
+
+// Her oprettes et h3 element og tekst
+let overskrift = document.createElement("h3");
+let overskriftText = document.createTextNode("Article 3");
+
+// Her indsættes teksten i overskriften (h3)
+overskrift.appendChild(overskriftText);
+
+// Her tilføjes den nye overskrift til den nye artikel
+newArticle.appendChild(overskrift);
+
+// Brødtekst
+let indhold = document.createElement("p");
+let indholdTekst = document.createTextNode(
+  "Her er noget nyt indhold den nye artikel."
+);
+
+indhold.appendChild(indholdTekst);
+newArticle.appendChild(indhold);
+
+// 3) Indsæt det nye element efter de eksiterende artikel element (appendChild)
+
+// appendChild betyder tilføj et ekstra barn til denne section/element
+mainSection.appendChild(newArticle);
