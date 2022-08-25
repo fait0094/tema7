@@ -1,4 +1,4 @@
-//opret array
+//Opret array
 let billeder = [
   "img1.png",
   "img2.png",
@@ -6,31 +6,28 @@ let billeder = [
   "img4.png",
   "img5.png",
   "img6.png",
-  "img7.jpg",
-  "img8.jpg",
+  "img7.png",
+  "img8.png",
 ];
 
-// klik på knap for skifte billede
+// Klik på knap for at skifte billede
 const knap = document.querySelector("button");
 const billede = document.querySelector("img");
 
-let antal = billeder.length - 1;
-let nummer = 0;
-console.log(antal);
+let number = 0;
 
 knap.addEventListener("click", skiftBillede);
 
-//opret funktion til at skifte billede
+//Opret funktion til at skifte billede
 function skiftBillede() {
-  if (nummer < antal) {
-    nummer++;
-    console.log(nummer);
+  if (number <= 6) {
+    number++;
   } else {
-    nummer = 0;
+    number = 0;
     knap.textContent = "Videre";
   }
-  if (nummer == antal) {
-    knap.textContent = "Forfra";
-  }
-  billede.src = "billeder/" + billeder[nummer];
+  billede.src = "billeder/" + billeder[number];
 }
+
+// Ved ikke om denne er korrekt udført. Har kigget på løsningen.
+// Men det ser ud til man godt kan undlade noget kode? Skal man overhovedet bruge if-else-statement.
