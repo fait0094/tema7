@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", start);
 // Har sat denne variabel herop, for at funktionen skiftBillede kunne bruge img1
 const img1 = document.querySelector("article:nth-child(1) img");
 
+const el = document.querySelectorAll("body");
+el.classList.add("skygge");
+
+// const alleArticle = document.querySelectorAll("article");
+// alleArticle.classList.add("skygge");
+
 function start() {
   // TITEL
   const titel = document.querySelector("h1");
@@ -120,9 +126,9 @@ function skiftBillede() {
   img1.src = "https://placeimg.com/640/480/arch?t=" + tal;
 }
 
-const alleArticle = document.querySelectorAll("article");
-// const article = document.querySelectorAll("article");
-alleArticle.classList.add("skygge");
+// const alleArticle = document.querySelectorAll("article");
+// // const article = document.querySelectorAll("article");
+// alleArticle.classList.add("skygge");
 
 // article { background-color: red; }
 
