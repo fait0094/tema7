@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+article {
+  border: 1px solid #333;
+}
+
+img {
+  width: 100%;
+}
+
+article:nth-child(1) img,
+article:nth-child(2) img {
+  cursor: pointer;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid #888;
+}
