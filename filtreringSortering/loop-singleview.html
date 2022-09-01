@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Øvelse 2 - Knapper til valg</title>
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <h1>Persongalleri</h1>
+    <header>
+      <h1>Alle</h1>
+    </header>
+
+    <nav>
+      <button data-troende="alle" class="valgt">Alle</button>
+      <button data-troende="ja">Troende</button>
+      <button data-troende="nej">Ikke troende</button>
+      <button data-troende="tvivler">Tvivler</button>
+    </nav>
+
+    <main id="holder"></main>
+
+    <template>
+      <article>
+        <img class="billede" src="" alt="" />
+        <h2 class="navn"></h2>
+        <p class="titel"></p>
+        <p class="fødselsdag"></p>
+      </article>
+    </template>
+
+    <div id="popop">
+      <article>
+        <img src="" alt="" />
+        <h2></h2>
+        <p></p>
+      </article>
+    </div>
+
+    <script src="loop-singleview.js"></script>
+  </body>
+</html>

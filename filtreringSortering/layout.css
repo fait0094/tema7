@@ -1,0 +1,48 @@
+#holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+article {
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.valgt {
+  background-color: red;
+  /* border: ;
+  border-radius: ; */
+}
+
+#popop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #000000aa;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#popop article {
+  width: 80%;
+  background-color: white;
+}
